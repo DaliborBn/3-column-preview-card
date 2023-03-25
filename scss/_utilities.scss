@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+$lexend-deca: 'Lexend Deca', sans-serif;
+$big-shoulders: 'Big Shoulders Display';
+$orange: hsl(31, 77%, 52%); 
+$cyan: hsl(184, 100%, 22%);
+$dark-cyan: hsl(179, 100%, 13%);
+$paragraphs: hsla(0, 0%, 100%, 0.75);
+$headings-buttons: hsl(0, 0%, 95%);
+
+$paragraph-margin-bottom: 0;
+$headings-margin-bottom: 0;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html {
+  font-size: 62.5%;
+}

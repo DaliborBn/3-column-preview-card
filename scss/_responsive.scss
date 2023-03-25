@@ -1,0 +1,44 @@
+@media (min-width:768px) {
+  .custom-container {
+    display: flex;
+    max-width: 100rem;
+    height: 50rem;
+  }
+  .sedans, .suvs, .luxury {
+    padding: 4.5rem;
+  }
+
+  .animation-1 {
+    animation: drive 2s ease forwards ;
+  }
+  @keyframes drive {
+    0% {
+      transform: translateX(0);
+      width: 27%;
+    }
+    100% {
+      transform: translateX(200%);
+      width: 33%;
+    }
+  }
+
+  .animation-2 {
+    animation: drive-r 2s ease forwards ;
+  }
+  @keyframes drive-r {
+    0% {
+      transform: translateX(200%);
+      width: 33%;
+    }
+    100% {
+      transform: translateX(0);
+      width: 27%;
+    }
+  }
+}
+
+@media (min-width:992px) {
+  .sedans, .suvs, .luxury {
+    padding: 5rem;
+  }
+}

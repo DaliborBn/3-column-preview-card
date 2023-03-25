@@ -1,0 +1,61 @@
+@import 'utilities';
+
+.custom-container {
+  margin: 3rem 2rem;
+  width: auto;
+  max-width: 51rem;
+}
+@mixin section($color) {
+  background-color: $color;
+  padding: 5rem;
+  img {
+    width: 27%;
+    cursor: pointer;
+  }
+  h2 {
+    font-size: 3.8rem;
+    margin: 2.8rem 0;
+    font-family: $big-shoulders;
+    letter-spacing: 0.2rem;
+    color: $headings-buttons;
+    cursor: pointer;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: $lexend-deca;
+    color: $paragraphs;
+  }
+  a {
+    font-size: 1.5rem;
+    background-color: white;
+    color: $color;
+    padding: 1.2rem 2rem;
+    width: 14.5rem;
+    margin-top: 3rem;
+    border: white 1px solid;
+    transition: all ease 0.6s;
+    &:hover {
+      background-color: $color;
+      color: $headings-buttons;
+      border: white 1px solid ;
+    }
+  }
+}
+
+.sedans {
+  @include section($orange);
+}
+.suvs {
+  @include section($cyan)
+}
+.luxury {
+  @include section($dark-cyan)
+}
+
+@import 'responsive';
