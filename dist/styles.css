@@ -8392,7 +8392,8 @@ html {
 .custom-container {
   margin: 3rem 2rem;
   width: auto;
-  max-width: 51rem; }
+  max-width: 51rem;
+  box-shadow: 0px 8px 15px rgba(125, 125, 125, 0.722); }
 
 .sedans {
   background-color: #e38826;
@@ -8406,11 +8407,8 @@ html {
     font-family: "Big Shoulders Display";
     letter-spacing: 0.2rem;
     color: #f2f2f2;
-    cursor: pointer;
     opacity: 1;
-    transition: all ease-in-out 0.3s; }
-    .sedans h2:hover, .sedans .h2:hover {
-      opacity: 0.7; }
+    transition: all ease-in-out 0.2s; }
   .sedans p {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -8418,17 +8416,13 @@ html {
     color: rgba(255, 255, 255, 0.75); }
   .sedans a {
     font-size: 1.5rem;
-    background-color: white;
+    background-color: #fff;
     color: #e38826;
     padding: 1.2rem 2rem;
     width: 14.5rem;
     margin-top: 3rem;
-    border: white 1px solid;
-    transition: all ease 0.6s; }
-    .sedans a:hover {
-      background-color: #e38826;
-      color: #f2f2f2;
-      border: white 1px solid; }
+    border: #fff 1px solid;
+    transition: all ease 0.2s; }
 
 .suvs {
   background-color: #006970;
@@ -8442,11 +8436,8 @@ html {
     font-family: "Big Shoulders Display";
     letter-spacing: 0.2rem;
     color: #f2f2f2;
-    cursor: pointer;
     opacity: 1;
-    transition: all ease-in-out 0.3s; }
-    .suvs h2:hover, .suvs .h2:hover {
-      opacity: 0.7; }
+    transition: all ease-in-out 0.2s; }
   .suvs p {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -8454,17 +8445,13 @@ html {
     color: rgba(255, 255, 255, 0.75); }
   .suvs a {
     font-size: 1.5rem;
-    background-color: white;
+    background-color: #fff;
     color: #006970;
     padding: 1.2rem 2rem;
     width: 14.5rem;
     margin-top: 3rem;
-    border: white 1px solid;
-    transition: all ease 0.6s; }
-    .suvs a:hover {
-      background-color: #006970;
-      color: #f2f2f2;
-      border: white 1px solid; }
+    border: #fff 1px solid;
+    transition: all ease 0.2s; }
 
 .luxury {
   background-color: #004241;
@@ -8478,11 +8465,8 @@ html {
     font-family: "Big Shoulders Display";
     letter-spacing: 0.2rem;
     color: #f2f2f2;
-    cursor: pointer;
     opacity: 1;
-    transition: all ease-in-out 0.3s; }
-    .luxury h2:hover, .luxury .h2:hover {
-      opacity: 0.7; }
+    transition: all ease-in-out 0.2s; }
   .luxury p {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -8490,17 +8474,28 @@ html {
     color: rgba(255, 255, 255, 0.75); }
   .luxury a {
     font-size: 1.5rem;
-    background-color: white;
+    background-color: #fff;
     color: #004241;
     padding: 1.2rem 2rem;
     width: 14.5rem;
     margin-top: 3rem;
-    border: white 1px solid;
-    transition: all ease 0.6s; }
-    .luxury a:hover {
-      background-color: #004241;
-      color: #f2f2f2;
-      border: white 1px solid; }
+    border: #fff 1px solid;
+    transition: all ease 0.2s; }
+
+/* Hovers */
+@media (hover: hover) {
+  .custom-card h2:hover, .custom-card .h2:hover {
+    opacity: 0.7;
+    cursor: pointer; }
+  .custom-card a:hover {
+    color: #f2f2f2;
+    border: #fff 1px solid; }
+  .sedans a:hover {
+    background-color: #e38826; }
+  .suvs a:hover {
+    background-color: #006970; }
+  .luxury a:hover {
+    background-color: #004241; } }
 
 @media (min-width: 768px) {
   .custom-container {
