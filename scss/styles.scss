@@ -21,6 +21,10 @@
     color: $headings-buttons;
     opacity: 1;
     transition: all ease-in-out 0.2s;
+    &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    }
   } 
   p {
     font-size: 1.5rem;
@@ -37,6 +41,11 @@
     margin-top: 3rem;
     border: $white 1px solid;
     transition: all ease 0.2s;
+    &:hover {
+      background-color: $color;
+      color: $headings-buttons;
+      border: $white 1px solid;
+    }
   }
 }
 
@@ -48,27 +57,6 @@
 }
 .luxury {
   @include section($dark-cyan)
-}
-
-/* Hovers */
-@media (hover: hover) {
-  .custom-card h2:hover {
-    opacity: 0.7;
-    cursor: pointer;
-  }
-  .custom-card a:hover {
-    color: $headings-buttons;
-    border: $white 1px solid;
-  }
-  .sedans a:hover {
-    background-color: $orange;
-  }
-  .suvs a:hover {
-    background-color: $cyan;
-  }
-  .luxury a:hover {
-    background-color: $dark-cyan;
-  }
 }
 
 @import 'responsive';
