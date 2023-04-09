@@ -8409,6 +8409,9 @@ html {
     color: #f2f2f2;
     opacity: 1;
     transition: all ease-in-out 0.2s; }
+    .sedans h2:hover, .sedans .h2:hover {
+      opacity: 0.7;
+      cursor: pointer; }
   .sedans p {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -8423,6 +8426,10 @@ html {
     margin-top: 3rem;
     border: #fff 1px solid;
     transition: all ease 0.2s; }
+    .sedans a:hover {
+      background-color: #e38826;
+      color: #f2f2f2;
+      border: #fff 1px solid; }
 
 .suvs {
   background-color: #006970;
@@ -8438,6 +8445,9 @@ html {
     color: #f2f2f2;
     opacity: 1;
     transition: all ease-in-out 0.2s; }
+    .suvs h2:hover, .suvs .h2:hover {
+      opacity: 0.7;
+      cursor: pointer; }
   .suvs p {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -8452,6 +8462,10 @@ html {
     margin-top: 3rem;
     border: #fff 1px solid;
     transition: all ease 0.2s; }
+    .suvs a:hover {
+      background-color: #006970;
+      color: #f2f2f2;
+      border: #fff 1px solid; }
 
 .luxury {
   background-color: #004241;
@@ -8467,6 +8481,9 @@ html {
     color: #f2f2f2;
     opacity: 1;
     transition: all ease-in-out 0.2s; }
+    .luxury h2:hover, .luxury .h2:hover {
+      opacity: 0.7;
+      cursor: pointer; }
   .luxury p {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -8481,21 +8498,10 @@ html {
     margin-top: 3rem;
     border: #fff 1px solid;
     transition: all ease 0.2s; }
-
-/* Hovers */
-@media (hover: hover) {
-  .custom-card h2:hover, .custom-card .h2:hover {
-    opacity: 0.7;
-    cursor: pointer; }
-  .custom-card a:hover {
-    color: #f2f2f2;
-    border: #fff 1px solid; }
-  .sedans a:hover {
-    background-color: #e38826; }
-  .suvs a:hover {
-    background-color: #006970; }
-  .luxury a:hover {
-    background-color: #004241; } }
+    .luxury a:hover {
+      background-color: #004241;
+      color: #f2f2f2;
+      border: #fff 1px solid; }
 
 @media (min-width: 768px) {
   .custom-container {
